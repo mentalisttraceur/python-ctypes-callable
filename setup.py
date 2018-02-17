@@ -4,7 +4,7 @@ from os import path
 
 from setuptools import setup
 
-from .ctypes_callable import __doc__, __version__
+from ctypes_callable import __doc__, __version__
 
 project_directory = path.abspath(path.dirname(__file__))
 readme_path = path.join(project_directory, 'README.rst')
