@@ -19,7 +19,7 @@ setup(
     description=__doc__.split('\n')[0],
     long_description=long_description,
     license='0BSD (BSD Zero Clause License)',
-    url='https://github.com/mentalisttraceur/ctypes-callable',
+    url='https://github.com/mentalisttraceur/python-ctypes-callable',
     author='Alexander Kozhevnikov',
     author_email='mentalisttraceur@gmail.com',
     classifiers=[
