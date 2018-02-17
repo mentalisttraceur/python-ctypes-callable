@@ -67,4 +67,4 @@ besides CPython.
 If you're looking for something that's basically this, but won't break
 upon import on other Python implementations, you can use
 `the ``polyfill-callable`` module
-<https://github.com/mentalisttraceur/polyfill-callable>`_ instead.
+<https://github.com/mentalisttraceur/python-polyfill-callable>`_ instead.
