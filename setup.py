@@ -2,20 +2,25 @@
 
 from os import path
 
-from setuptools import setup
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
 from ctypes_callable import __doc__, __version__
 
 project_directory = path.abspath(path.dirname(__file__))
 readme_path = path.join(project_directory, 'README.rst')
-library_path = path.join(project_directory, 'ctypes_callable.py')
 
-with open(readme_path, encoding='utf-8') as readme_file:
+readme_file = open(readme_path)
+try:
     long_description = readme_file.read()
+finally:
+    readme_file.close()
 
 setup(
     name='ctypes-callable',
-    version=__version__,
+    version=__version__ + '.post1',
     description=__doc__.split('\n')[0],
     long_description=long_description,
     license='0BSD (BSD Zero Clause License)',
