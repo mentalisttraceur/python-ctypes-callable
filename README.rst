@@ -59,10 +59,10 @@ example, `usercustomize` or `sitecustomize` might be good places):
 Portability
 -----------
 
-This module relies on accessing the Python C API through `ctypes`, which
-means it will fail on import on Jython, IronPython, PyPy, MicroPython,
-PyPy.js, Brython, Transcrypt, and probably every other implementation
-besides CPython.
+This module will **fail** on ``import`` on Jython, IronPython, PyPy,
+MicroPython, PyPy.js, Brython, Transcrypt, and probably any other
+implementation besides CPython, because it relies on accessing the
+Python C API through ``ctypes``.
 
 If you're looking for something that's basically this, but won't break
 upon import on other Python implementations, you can use
