@@ -20,7 +20,7 @@ finally:
 
 setup(
     name='ctypes-callable',
-    version=__version__ + '.post2',
+    version=__version__ + '.post3',
     description=__doc__.split('\n')[0],
     long_description=long_description,
     license='0BSD (BSD Zero Clause License)',
@@ -30,19 +30,7 @@ setup(
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.2',
-        'Programming Language :: Python :: 3.1',
-        'Programming Language :: Python :: 3.0',
         'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.5',
         'Programming Language :: Python :: Implementation :: CPython',
         'Operating System :: OS Independent',
     ],
