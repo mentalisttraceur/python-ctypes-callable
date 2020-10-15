@@ -31,14 +31,15 @@ work on Python 3.0 and 3.1.
 """
 
 
-from ctypes import pythonapi, py_object
+from ctypes import py_object as _py_object
+from ctypes import pythonapi as _pythonapi
 
 
 __all__ = ('callable',)
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 
-PyCallable_Check = pythonapi.PyCallable_Check  # pylint: disable=invalid-name
+_PyCallable_Check = _pythonapi.PyCallable_Check  # pylint: disable=invalid-name
 
 
 def callable(obj):  # pylint: disable=redefined-builtin
@@ -47,4 +48,4 @@ def callable(obj):  # pylint: disable=redefined-builtin
     Note that classes are callable, as are instances of classes with a
     __call__() method.
     """
-    return bool(PyCallable_Check(py_object(obj)))
+    return bool(_PyCallable_Check(_py_object(obj)))
