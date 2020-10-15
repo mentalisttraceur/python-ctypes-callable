@@ -66,5 +66,4 @@ Python C API through ``ctypes``.
 
 If you're looking for something that's basically this, but won't break
 upon import on other Python implementations, you can use
-`the ``polyfill-callable`` module
-<https://github.com/mentalisttraceur/python-polyfill-callable>`_ instead.
+```polyfill-callable`` <https://pypi.org/project/polyfill-callable/>`_.
