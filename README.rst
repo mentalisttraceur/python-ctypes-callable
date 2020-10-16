@@ -64,6 +64,8 @@ MicroPython, PyPy.js, Brython, Transcrypt, and probably any other
 implementation besides CPython, because it relies on accessing the
 Python C API through ``ctypes``.
 
-If you're looking for something that's basically this, but won't break
-upon import on other Python implementations, you can use
-```polyfill-callable`` <https://pypi.org/project/polyfill-callable/>`_.
+If you're looking for something that's basically this, but won't break upon
+import on other Python implementations, you can use |polyfill-callable|_.
+
+.. |polyfill-callable| replace:: ``polyfill-callable``
+.. _polyfill-callable: https://pypi.org/project/polyfill-callable
