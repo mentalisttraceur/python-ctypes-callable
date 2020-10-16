@@ -1,22 +1,8 @@
 Python ``ctypes``-based ``callable`` reimplementation
 =====================================================
 
-Implements ``callable`` using ctypes (useful on Python 3.0 and 3.1)
-
-Most Python versions have a native builtin function called ``callable``
-which checks if the argument is a callable object.
-
-Python 3 initially removed the builtin function (but kept the internal
-C function), before adding it back in Python 3.2 because no alternative
-is truly equivalent in all cases.
-
-This module provides a function named ``callable`` which is equivalent
-to the native ``callable``, by directly accessing the underlying CPython
-API through the ``ctypes`` module.
-
-This isn't very useful by itself for most Python versions, but it is an
-essential building block for enabling code relying on ``callable`` to
-work on Python 3.0 and 3.1.
+Implements ``callable`` using ``ctypes`` (useful on CPython
+3.0 and 3.1, which is missing the ``callable`` function).
 
 
 Versioning
