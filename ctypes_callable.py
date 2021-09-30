@@ -20,7 +20,7 @@ from ctypes import pythonapi as _pythonapi
 
 
 __all__ = ('callable',)
-__version__ = '1.0.2'
+__version__ = '1.0.3'
 
 
 _PyCallable_Check = _pythonapi.PyCallable_Check  # pylint: disable=invalid-name
