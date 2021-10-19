@@ -10,13 +10,13 @@ from ctypes import pythonapi as _pythonapi
 
 
 __all__ = ('callable',)
-__version__ = '1.0.3'
+__version__ = '1.0.4'
 
 
-_PyCallable_Check = _pythonapi.PyCallable_Check  # pylint: disable=invalid-name
+_PyCallable_Check = _pythonapi.PyCallable_Check
 
 
-def callable(obj):  # pylint: disable=redefined-builtin
+def callable(obj):
     """Return whether the object is callable (i.e., some kind of function).
 
     Note that classes are callable, as are instances of classes with a
